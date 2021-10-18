@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1034.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <div class="container">
+        <center>
+            <h2 style="color:rgb(23, 240, 23); font-weight: 900;font-family: cursive;">FACE RECOGNITION WEB APP</h2>
+
+            <br><br>
+
+            <p style="font-size: 22px;">Model is trained to identify the following people: </p>
+            <h3 class="btn btn-default" style="font-size: 22px; color:blue; border-color:blue; border-width: 5px;">
+                Father</h3>
+            <br>
+            <h3 class="btn btn-default" style="font-size: 22px; color:blue; border-color:blue; border-width: 5px;">
+                Mother</h3>
+            <br>
+            <h3 class="btn btn-default" style="font-size: 22px; color:blue; border-color:blue; border-width: 5px;">
+                Brother</h3>
+            <br>
+            <h3 class="btn btn-default" style="font-size: 22px; color:blue; border-color:blue; border-width: 5px;">
+                Sister</h3>
+            <br><br>
+            <label style="font-size: 25px;">Webcam View - </label>
+            <br>
+            <br>
+            <div id="camera"></div>
+            <br><br>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="take_snapshot()" class="btn btn-info" style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 20%; font-size: 25px;">Capture Image</button>
+            <br><br>
+            <button onclick="check()" class="btn btn-success"style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 20%; font-size: 25px;">Identify Image</button>
+            <br><br>
+
+            <p style="font-size: 22px;">Object : <span id="result_of_objects"></span> </p>
+            <p style="font-size: 22px;">Accuracy : <span id="result_of_accuracy"></span> </p>
+
+    </div>
+    <script src="main.js"></script>
+
+    </center>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
