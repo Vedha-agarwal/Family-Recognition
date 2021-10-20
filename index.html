@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
 </head>
 
@@ -40,9 +41,13 @@
             <br><br>
             <div id="result"></div>
             <br><br>
-            <button onclick="take_snapshot()" class="btn btn-info" style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 20%; font-size: 25px;">Capture Image</button>
+            <button onclick="take_snapshot()" class="btn btn-info"
+                style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 20%; font-size: 25px;">Capture
+                Image</button>
             <br><br>
-            <button onclick="check()" class="btn btn-success"style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 20%; font-size: 25px;">Identify Image</button>
+            <button onclick="check()" class="btn btn-success"
+                style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 20%; font-size: 25px;">Identify
+                Image</button>
             <br><br>
 
             <p style="font-size: 22px;">Object : <span id="result_of_objects"></span> </p>
